@@ -26,7 +26,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/cayleygraph/cayley/graph/iterator"
+	"github.com/apollison/cayley/graph/iterator"
 	"github.com/cayleygraph/quad"
 )
 

@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cayleygraph/cayley/graph/refs"
+	"github.com/apollison/cayley/graph/refs"
 )
 
 var (

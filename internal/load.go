@@ -9,8 +9,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/cayleygraph/cayley/clog"
-	"github.com/cayleygraph/cayley/internal/decompressor"
+	"github.com/apollison/cayley/clog"
+	"github.com/apollison/cayley/internal/decompressor"
 	"github.com/cayleygraph/quad"
 	"github.com/cayleygraph/quad/nquads"
 )

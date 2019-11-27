@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/cayleygraph/cayley/graph"
+	"github.com/apollison/cayley/graph"
 	"github.com/cayleygraph/quad"
 )
 

@@ -17,10 +17,10 @@ package kv
 import (
 	"context"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/graph/proto"
-	"github.com/cayleygraph/cayley/graph/refs"
+	"github.com/apollison/cayley/graph"
+	"github.com/apollison/cayley/graph/iterator"
+	"github.com/apollison/cayley/graph/proto"
+	"github.com/apollison/cayley/graph/refs"
 	"github.com/cayleygraph/quad"
 )
 

@@ -22,13 +22,13 @@ import (
 	"testing"
 	"time"
 
-	. "github.com/cayleygraph/cayley/query/path"
+	. "github.com/apollison/cayley/query/path"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/graphtest/testutil"
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/query/shape"
-	_ "github.com/cayleygraph/cayley/writer"
+	"github.com/apollison/cayley/graph"
+	"github.com/apollison/cayley/graph/graphtest/testutil"
+	"github.com/apollison/cayley/graph/iterator"
+	"github.com/apollison/cayley/query/shape"
+	_ "github.com/apollison/cayley/writer"
 	"github.com/cayleygraph/quad"
 	"github.com/stretchr/testify/require"
 )

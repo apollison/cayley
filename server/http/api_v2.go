@@ -28,11 +28,11 @@ import (
 
 	"github.com/julienschmidt/httprouter"
 
-	"github.com/cayleygraph/cayley/clog"
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/query"
-	"github.com/cayleygraph/cayley/query/shape"
-	_ "github.com/cayleygraph/cayley/writer"
+	"github.com/apollison/cayley/clog"
+	"github.com/apollison/cayley/graph"
+	"github.com/apollison/cayley/query"
+	"github.com/apollison/cayley/query/shape"
+	_ "github.com/apollison/cayley/writer"
 	"github.com/cayleygraph/quad"
 )
 

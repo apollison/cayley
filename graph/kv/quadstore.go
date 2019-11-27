@@ -25,12 +25,12 @@ import (
 
 	"github.com/hidal-go/hidalgo/kv"
 
-	"github.com/cayleygraph/cayley/clog"
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/proto"
-	"github.com/cayleygraph/cayley/graph/refs"
-	"github.com/cayleygraph/cayley/internal/lru"
-	"github.com/cayleygraph/cayley/query/shape"
+	"github.com/apollison/cayley/clog"
+	"github.com/apollison/cayley/graph"
+	"github.com/apollison/cayley/graph/proto"
+	"github.com/apollison/cayley/graph/refs"
+	"github.com/apollison/cayley/internal/lru"
+	"github.com/apollison/cayley/query/shape"
 	"github.com/cayleygraph/quad"
 	"github.com/cayleygraph/quad/pquads"
 	boom "github.com/tylertreat/BoomFilters"

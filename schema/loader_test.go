@@ -4,9 +4,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/graph/memstore"
-	"github.com/cayleygraph/cayley/schema"
+	"github.com/apollison/cayley/graph/iterator"
+	"github.com/apollison/cayley/graph/memstore"
+	"github.com/apollison/cayley/schema"
 	"github.com/cayleygraph/quad"
 )
 

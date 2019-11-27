@@ -20,9 +20,9 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/graphmock"
-	"github.com/cayleygraph/cayley/graph/iterator"
+	"github.com/apollison/cayley/graph"
+	"github.com/apollison/cayley/graph/graphmock"
+	"github.com/apollison/cayley/graph/iterator"
 	"github.com/cayleygraph/quad"
 )
 

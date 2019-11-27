@@ -5,11 +5,11 @@ import (
 	"sort"
 	"testing"
 
-	"github.com/cayleygraph/cayley/client"
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/graphtest"
-	"github.com/cayleygraph/cayley/graph/memstore"
-	"github.com/cayleygraph/cayley/writer"
+	"github.com/apollison/cayley/client"
+	"github.com/apollison/cayley/graph"
+	"github.com/apollison/cayley/graph/graphtest"
+	"github.com/apollison/cayley/graph/memstore"
+	"github.com/apollison/cayley/writer"
 	"github.com/cayleygraph/quad"
 	"github.com/stretchr/testify/require"
 )

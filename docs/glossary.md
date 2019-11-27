@@ -12,7 +12,7 @@ _Note: this definitions in this glossary are sequenced so that they build on eac
 
 ## quad
 
-1. where triples have the form `{subject, predicate, object}`, quads would have a form along the lines of `{subject, predicate, object, context}` [source](https://en.wikipedia.org/wiki/Named_graph#Named_graphs_and_quads) 
+1. where triples have the form `{subject, predicate, object}`, quads would have a form along the lines of `{subject, predicate, object, context}` [source](https://en.wikipedia.org/wiki/Named_graph#Named_graphs_and_quads)
 2. You can add context or extra values to triples that identifies them and makes it easy to define subgraphs, or named properties. [source](https://neo4j.com/blog/rdf-triple-store-vs-labeled-property-graph-difference/)
 3. From [Cayley godoc](https://godoc.org/github.com/cayleygraph/quad#Quad):
 
@@ -39,10 +39,10 @@ _Note: this definitions in this glossary are sequenced so that they build on eac
 ## RDF
 
 1. [Resource Description Framework](https://en.wikipedia.org/wiki/Resource_Description_Framework), basically a set of standards defined around quads
-2. An RDF triple consists of three components: 
+2. An RDF triple consists of three components:
    1. the subject, which is an IRI or a blank node
    2. the predicate, which is an IRI
-   3. the object, which is an IRI, a literal or a blank node [source](https://www.w3.org/TR/rdf11-concepts/#h3_section-triples)   
+   3. the object, which is an IRI, a literal or a blank node [source](https://www.w3.org/TR/rdf11-concepts/#h3_section-triples)
 
 ## RDF store, quad store, named graph, semantic graph database
 
@@ -55,7 +55,7 @@ _Note: this definitions in this glossary are sequenced so that they build on eac
 
 ## Gizmo
 
-1. A [Gremlin/TinkerPop](http://tinkerpop.apache.org/)-inspired query language for Cayley.  Looks a lot like JavaScript, the syntax is documented [here](https://github.com/cayleygraph/cayley/blob/master/docs/GizmoAPI.md#graphv).
+1. A [Gremlin/TinkerPop](http://tinkerpop.apache.org/)-inspired query language for Cayley.  Looks a lot like JavaScript, the syntax is documented [here](https://github.com/apollison/cayley/blob/master/docs/GizmoAPI.md#graphv).
 
 ## g.V\(\)
 
@@ -64,7 +64,7 @@ _Note: this definitions in this glossary are sequenced so that they build on eac
 
 ## inbound/outbound predicate
 
-1. Inbound/outbound refers to the direction of a relation via a predicate.  In the case of the triple "A follows B", "follows" is an outbound predicate for `A` and an inbound predicate for `B`.    
+1. Inbound/outbound refers to the direction of a relation via a predicate.  In the case of the triple "A follows B", "follows" is an outbound predicate for `A` and an inbound predicate for `B`.
 
    In/out predicates can be expressed in a query language, for example using the format `resultSet = subject.out(predicate)` to discover matching `Object`s.  In the case of the triple "A follows B", `A.out(“follows”)` would return a set of nodes which contains `B`.  An excellent example of this sort of query format is given in the Gremlin/TinkerPop homepage example:
 
@@ -98,7 +98,7 @@ _Note: this definitions in this glossary are sequenced so that they build on eac
 ## path
 
 1. Paths are just a set of helpers to build a query, but they are not that good for building something more complex. You can try using [Shapes](glossary.md#shape) for this - it will give you a full control of what the query actually does. [source](https://discourse.cayley.io/t/a-variety-of-questions/1183/2)
-2. Path represents either a morphism \(a pre-defined path stored for later use\), or a concrete path, consisting of a morphism and an underlying QuadStore. [source](https://godoc.org/github.com/cayleygraph/cayley/query/path#Path)
+2. Path represents either a morphism \(a pre-defined path stored for later use\), or a concrete path, consisting of a morphism and an underlying QuadStore. [source](https://godoc.org/github.com/apollison/cayley/query/path#Path)
 3. Underlying code:
 
    ```go
@@ -118,11 +118,11 @@ _Note: this definitions in this glossary are sequenced so that they build on eac
    type applyMorphism func(shape.Shape, *pathContext) (shape.Shape, *pathContext)
    ```
 
-   So, as previously stated, the [path](https://godoc.org/github.com/cayleygraph/cayley/query/path) package is just helper methods on top of the [shape](https://godoc.org/github.com/cayleygraph/cayley/graph/shape) package.
+   So, as previously stated, the [path](https://godoc.org/github.com/apollison/cayley/query/path) package is just helper methods on top of the [shape](https://godoc.org/github.com/apollison/cayley/graph/shape) package.
 
 ## morphism
 
-1. Morphism is basically a path that is not attached to any particular quadstore or a particular starting point in the graph. Morphisms are meant to be used as a query part that can be applied to other queries to follow a path specified in the Morphism.  
+1. Morphism is basically a path that is not attached to any particular quadstore or a particular starting point in the graph. Morphisms are meant to be used as a query part that can be applied to other queries to follow a path specified in the Morphism.
 
    A good example will be a `FollowRecursive` function that will apply a single morphism multiple times to get to all nodes that can be traversed recursively. [source](https://discourse.cayley.io/t/a-variety-of-questions/1183/2)
 
@@ -147,7 +147,7 @@ _Note: this definitions in this glossary are sequenced so that they build on eac
 
 ## LinkTo iterator
 
-1. A LinksTo takes a subiterator of nodes, and contains an iteration of links which "link to" those nodes in a given direction. ... Can be seen as the dual of the HasA iterator. [source](https://github.com/cayleygraph/cayley/blob/1f53d04893ea9b2736e9b2277bbba3f47b88711a/graph/iterator/linksto.go#L17)
+1. A LinksTo takes a subiterator of nodes, and contains an iteration of links which "link to" those nodes in a given direction. ... Can be seen as the dual of the HasA iterator. [source](https://github.com/apollison/cayley/blob/1f53d04893ea9b2736e9b2277bbba3f47b88711a/graph/iterator/linksto.go#L17)
    * Next\(\)ing a LinksTo is straightforward -- iterate through all links to things in the subiterator, and then advance the subiterator, and do it again.
      * To restate in pseudo-code; `results` is what would be returned in successive `Next()` calls:
 
@@ -175,8 +175,8 @@ _Note: this definitions in this glossary are sequenced so that they build on eac
 
 ## HasA iterator
 
-1. The HasA takes a subiterator of links, and acts as an iterator of nodes in the given direction. The name comes from the idea that a "link HasA subject" or a "link HasA predicate". [source](https://github.com/cayleygraph/cayley/blob/41bf496d9dfe622b385c1482789480df8b106472/graph/iterator/hasa.go#L17)
-   * Next\(\), [We have a subiterator we can get a value from, and we can take that resultant quad, pull our direction out of it, and return that.](https://github.com/cayleygraph/cayley/blob/41bf496d9dfe622b385c1482789480df8b106472/graph/iterator/hasa.go#L206)
+1. The HasA takes a subiterator of links, and acts as an iterator of nodes in the given direction. The name comes from the idea that a "link HasA subject" or a "link HasA predicate". [source](https://github.com/apollison/cayley/blob/41bf496d9dfe622b385c1482789480df8b106472/graph/iterator/hasa.go#L17)
+   * Next\(\), [We have a subiterator we can get a value from, and we can take that resultant quad, pull our direction out of it, and return that.](https://github.com/apollison/cayley/blob/41bf496d9dfe622b385c1482789480df8b106472/graph/iterator/hasa.go#L206)
 
      ```go
      var results []quad.Value
@@ -198,7 +198,7 @@ _Note: this definitions in this glossary are sequenced so that they build on eac
 
 ## shape
 
-1. Shape represent a query tree shape. [source](https://godoc.org/github.com/cayleygraph/cayley/graph/shape#Shape)
+1. Shape represent a query tree shape. [source](https://godoc.org/github.com/apollison/cayley/graph/shape#Shape)
 
    ```go
     type Shape interface {
@@ -212,14 +212,14 @@ _Note: this definitions in this glossary are sequenced so that they build on eac
 
 ## token
 
-1. In the context of a [quad store](https://godoc.org/github.com/cayleygraph/cayley/graph#QuadStore), a [graph.Value](https://godoc.org/github.com/cayleygraph/cayley/graph#Value).  However the backend wishes to implement it, a Value is merely a token to a quad or a node that the backing store itself understands, and the base iterators pass around.    
+1. In the context of a [quad store](https://godoc.org/github.com/apollison/cayley/graph#QuadStore), a [graph.Value](https://godoc.org/github.com/apollison/cayley/graph#Value).  However the backend wishes to implement it, a Value is merely a token to a quad or a node that the backing store itself understands, and the base iterators pass around.
 
     For example, in a very traditional, graphd-style graph, these are int64s \(guids of the primitives\). In a very direct sort of graph, these could be pointers to structs, or merely quads, or whatever works best for the backing store.
 
 ## reification
 
 1. “With reification, we create a metagraph on top of our graph that represents the statement that we have here. We create a new node that represents a statement and points at the subject...” [source](https://neo4j.com/blog/rdf-triple-store-vs-labeled-property-graph-difference/)
-2. Reifying a relationship means viewing it as an entity. The purpose of reifying a relationship is to make it explicit, when additional information needs to be added to it.   
+2. Reifying a relationship means viewing it as an entity. The purpose of reifying a relationship is to make it explicit, when additional information needs to be added to it.
 
    Viewing a relationship as an entity, one can say that the entity reifies the relationship. This is called reification of a relationship. Like any other entity, it must be an instance of an entity type. [source](https://en.wikipedia.org/wiki/Reification_)
 

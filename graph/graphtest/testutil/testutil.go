@@ -5,8 +5,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/writer"
+	"github.com/apollison/cayley/graph"
+	"github.com/apollison/cayley/writer"
 	"github.com/cayleygraph/quad"
 	"github.com/cayleygraph/quad/nquads"
 	"github.com/stretchr/testify/require"

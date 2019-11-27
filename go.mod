@@ -1,4 +1,4 @@
-module github.com/cayleygraph/cayley
+module github.com/apollison/cayley
 
 go 1.12
 

@@ -22,10 +22,10 @@ import (
 
 	"github.com/dop251/goja"
 
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/query"
-	"github.com/cayleygraph/cayley/query/path"
-	"github.com/cayleygraph/cayley/query/shape"
+	"github.com/apollison/cayley/graph/iterator"
+	"github.com/apollison/cayley/query"
+	"github.com/apollison/cayley/query/path"
+	"github.com/apollison/cayley/query/shape"
 	"github.com/cayleygraph/quad"
 )
 

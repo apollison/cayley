@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"sort"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/query"
+	"github.com/apollison/cayley/graph"
+	"github.com/apollison/cayley/graph/iterator"
+	"github.com/apollison/cayley/query"
 )
 
 const Name = "sexp"

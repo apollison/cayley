@@ -4,7 +4,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/cayleygraph/cayley/schema"
+	"github.com/apollison/cayley/schema"
 	"github.com/cayleygraph/quad"
 	"github.com/cayleygraph/quad/voc"
 	"github.com/cayleygraph/quad/voc/rdf"

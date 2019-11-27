@@ -33,8 +33,8 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/graph/refs"
+	"github.com/apollison/cayley/graph/iterator"
+	"github.com/apollison/cayley/graph/refs"
 	"github.com/cayleygraph/quad"
 )
 

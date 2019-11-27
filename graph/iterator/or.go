@@ -24,7 +24,7 @@ package iterator
 import (
 	"context"
 
-	"github.com/cayleygraph/cayley/graph/refs"
+	"github.com/apollison/cayley/graph/refs"
 )
 
 type Or struct {

@@ -13,9 +13,9 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
 
-	"github.com/cayleygraph/cayley/clog"
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/internal"
+	"github.com/apollison/cayley/clog"
+	"github.com/apollison/cayley/graph"
+	"github.com/apollison/cayley/internal"
 	"github.com/cayleygraph/quad"
 )
 

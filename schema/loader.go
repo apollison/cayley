@@ -6,11 +6,11 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/cayleygraph/cayley/query/path"
+	"github.com/apollison/cayley/query/path"
 	"github.com/cayleygraph/quad"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/iterator"
+	"github.com/apollison/cayley/graph"
+	"github.com/apollison/cayley/graph/iterator"
 )
 
 var (

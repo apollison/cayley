@@ -3,7 +3,7 @@ package kv
 import (
 	"strings"
 
-	"github.com/cayleygraph/cayley/graph"
+	"github.com/apollison/cayley/graph"
 	"github.com/hidal-go/hidalgo/kv"
 )
 

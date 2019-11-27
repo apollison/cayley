@@ -21,11 +21,11 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/graphtest/testutil"
-	_ "github.com/cayleygraph/cayley/graph/memstore"
-	"github.com/cayleygraph/cayley/query"
-	_ "github.com/cayleygraph/cayley/writer"
+	"github.com/apollison/cayley/graph"
+	"github.com/apollison/cayley/graph/graphtest/testutil"
+	_ "github.com/apollison/cayley/graph/memstore"
+	"github.com/apollison/cayley/query"
+	_ "github.com/apollison/cayley/writer"
 	"github.com/cayleygraph/quad"
 )
 

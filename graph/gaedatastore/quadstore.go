@@ -25,11 +25,11 @@ import (
 	"google.golang.org/appengine"
 	"google.golang.org/appengine/datastore"
 
-	"github.com/cayleygraph/cayley/clog"
-	"github.com/cayleygraph/cayley/graph"
-	httpgraph "github.com/cayleygraph/cayley/graph/http"
-	"github.com/cayleygraph/cayley/graph/iterator"
-	"github.com/cayleygraph/cayley/graph/refs"
+	"github.com/apollison/cayley/clog"
+	"github.com/apollison/cayley/graph"
+	httpgraph "github.com/apollison/cayley/graph/http"
+	"github.com/apollison/cayley/graph/iterator"
+	"github.com/apollison/cayley/graph/refs"
 	"github.com/cayleygraph/quad"
 )
 

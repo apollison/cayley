@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	. "github.com/cayleygraph/cayley/graph/iterator"
+	. "github.com/apollison/cayley/graph/iterator"
 )
 
 func TestNotIteratorBasics(t *testing.T) {

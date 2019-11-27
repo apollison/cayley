@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/graph/log"
+	"github.com/apollison/cayley/graph"
+	"github.com/apollison/cayley/graph/log"
 	"github.com/cayleygraph/quad"
 )
 

@@ -28,9 +28,9 @@ import (
 
 	"github.com/peterh/liner"
 
-	"github.com/cayleygraph/cayley/clog"
-	"github.com/cayleygraph/cayley/graph"
-	"github.com/cayleygraph/cayley/query"
+	"github.com/apollison/cayley/clog"
+	"github.com/apollison/cayley/graph"
+	"github.com/apollison/cayley/query"
 	"github.com/cayleygraph/quad/nquads"
 )
 
